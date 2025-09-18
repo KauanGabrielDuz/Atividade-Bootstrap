@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CEDUP Feira de Ciências</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .hero {
+        background-color: #1c1c1c;
+        padding: 50px 0;
+        text-align: center;
+        color: white;
+      }
+      .hero img {
+        max-width: 600px;
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .card {
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card img {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        max-height: 180px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">CEDUP Feira de Ciências</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="hero">
+      <div class="container">
+        <img src="https://cedupguaramirim.com.br/imagens/slider/capamobile.png" alt="Banner Feira de Ciências">
+        <h1 class="fw-bold">Feira de Ciências 2025</h1>
+        <p>Conheça os trabalhos desenvolvidos pelos alunos do CEDUP.</p>
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline-light">Saiba Mais</a>
+      </div>
+    </section>
+
+
+    <section class="py-5 bg-white" id="projetos">
+      <div class="container">
+        <h2 class="text-center mb-4">Projetos em Destaque</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+               <img src="https://th.bing.com/th/id/R.bda8ab40c1132b0e92e6d5609c1dab64?rik=X2so63s3B9rHdw&riu=http%3a%2f%2fwww.wasolar.com.br%2fwp-content%2fuploads%2f2017%2f02%2fenergia-solar-escola-publica.jpg%3fquality%3d100.3017102210530&ehk=dnBoxPAbq%2fb%2bJKi9rU3gJQLZ7Dy4ZgbLSb4XOoFe7q4%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="Energia Solar">
+              <div class="card-body text-center">
+                <h5 class="card-title">Energia Solar</h5>
+                <p class="card-text">Uso da energia solar em ambientes escolares.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSolar">Detalhes</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="https://tse2.mm.bing.net/th/id/OIP.0GOC4_KdAUUkwnPt6Sj7tQHaE6?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Reciclagem">
+              <div class="card-body text-center">
+                <h5 class="card-title">Reciclagem</h5>
+                <p class="card-text">Como reciclar pode ajudar a preservar o meio ambiente.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalReciclagem">Detalhes</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img src="https://tse1.mm.bing.net/th/id/OIP.ha4k-DTB3GjHHyBkJ8jD8QHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Robótica">
+              <div class="card-body text-center">
+                <h5 class="card-title">Robótica</h5>
+                <p class="card-text">Robôs feitos pelos alunos para auxiliar no dia a dia.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalRobotica">Detalhes</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+
+               <img src="https://www.objetivogenesis.com.br/wp-content/uploads/2019/08/4873.jpg" class="card-img-top" alt="Vida Marinha">
+              <div class="card-body text-center">
+                <h5 class="card-title">Vida Marinha</h5>
+                <p class="card-text">Estudo sobre espécies marinhas e sua preservação.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMarinha">Detalhes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="modalSolar" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Energia Solar</h5></div>
+          <div class="modal-body">Projeto sobre uso de energia solar em escolas, destacando economia e sustentabilidade.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalReciclagem" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Reciclagem</h5></div>
+          <div class="modal-body">Projeto sobre reciclagem e como ela ajuda a preservar o meio ambiente.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalRobotica" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Robótica</h5></div>
+          <div class="modal-body">Projeto de robôs criados pelos alunos para facilitar o dia a dia.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalMarinha" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><h5 class="modal-title">Vida Marinha</h5></div>
+          <div class="modal-body">Estudo de espécies marinhas e propostas de preservação.</div>
+          <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button></div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="py-5 bg-light" id="contato">
+      <div class="container">
+        <h2 class="text-center mb-4">Contato</h2>
+        <form id="contatoForm">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+        <div class="alert alert-success mt-3 d-none" id="sucesso">Mensagem enviada com sucesso!</div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("contatoForm").addEventListener("submit", function(e){
+        e.preventDefault();
+        document.getElementById("sucesso").classList.remove("d-none");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

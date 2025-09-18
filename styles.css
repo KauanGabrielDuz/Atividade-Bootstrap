@@ -1,0 +1,7 @@
+:root{
+  /* Você pode personalizar o tema trocando variáveis CSS do Bootstrap */
+  --bs-primary:#0d6efd;   /* azul padrão */
+  /* Ex.: --bs-primary:#78467a; */
+}
+body{scroll-behavior:smooth}
+pre{white-space:pre-wrap}
